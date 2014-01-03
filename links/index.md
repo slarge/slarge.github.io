@@ -28,7 +28,7 @@ R code executed and compiled to Markdown and html with <a href= "http://rstudio.
 Styled with <a href= "http://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a>   
 Icons from <a href= "http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a>    
 Static site generation with <a href= "http://jekyllrb.com/" target="_blank">Jekyll</a>    
-Hosted for free on <a href= "http://aws.amazon.com/s3/" target="_blank">Amazon S3</a> with <a href= "http://s3tools.org/s3cmd" target="_blank">S3cmd</a>   
+Hosted for free on <a href= "pages.github.com" target="_blank">github pages</a>
 
 ------------
 
