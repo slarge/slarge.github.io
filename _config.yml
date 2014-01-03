@@ -1,3 +1,16 @@
-name: Your New Jekyll Site
+name: Scott Large
+description: 
+
+baseurl: http://slarge.github.io
+
+paginate: 5
+paginate_path: _site/notebook/page:num
+markdown: redcarpet
+permalink: /notebook/:title
 pygments: true
-baseurel: /notebook
+safe: true		
+analytics :
+  provider : google 
+  google : 
+      tracking_id : 'UA-35809801-1'
+

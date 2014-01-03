@@ -1,0 +1,6 @@
+.imagehover p {
+color: #fff;
+}
+.imagehover p:hover {
+color: #000;
+}
