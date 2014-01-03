@@ -4,7 +4,7 @@ layout: default
 ---
 _____
 
-<img src="/notebook/assets/Scott_beach.jpg" style="float: right; width: 200px; border:1px solid black; padding:0px;"/>
+<img src="/notebook/notebook/assets/Scott_beach.jpg" style="float: right; width: 200px; border:1px solid black; padding:0px;"/>
 ## About me ##
 I'm a Postdoctoral researcher with NOAA-Fisheries at the Northeast Fisheries Science Center in Woods Hole, MA. Currently, I am working on identifying thresholds in pressure-response relationships between ecological indicators, fishing, and the environment. In my research, I often find myself considering these types of questions: 
 
