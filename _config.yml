@@ -1,7 +1,7 @@
 name: Scott Large
 description: 
 
-baseurl: http://slarge.github.com/notebook
+baseurl: http://slarge.github.com/notebook/notebook
 
 paginate: 5
 paginate_path: _site/notebook/page:num
