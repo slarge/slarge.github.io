@@ -4,7 +4,7 @@ layout: default
 ---
 _____
 
-<img src="/assets/Scott_Bigelow.jpg" style="float:right; width: 200px; border:1px solid black; padding:0px;"/>
+<img src="/notebook/assets/Scott_Bigelow.jpg" style="float:right; width: 200px; border:1px solid black; padding:0px;"/>
 ### Contact Me ###
 Scott Large  
 NOAA Fisheries   

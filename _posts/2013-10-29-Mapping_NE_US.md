@@ -8,7 +8,7 @@ I've spent the past few weeks working hard to finalize a couple of manuscripts. 
 
 Here's the map. A few final touches and it should be set for publication! 
 
-![plot of chunk sampleMap_v_002.png](/assets/sampleMap_v_002.png) 
+![plot of chunk sampleMap_v_002.png](/notebook/assets/sampleMap_v_002.png) 
 
 See below for the code. It's quite long for a simple map because there were a lot of nuances that I needed to manually adjust.
 

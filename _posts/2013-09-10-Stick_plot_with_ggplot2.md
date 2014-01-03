@@ -13,7 +13,7 @@ First, I went to <a href="http://forecast.io/" target="_blank">forecast.io</a> a
 
 Stick plots are basically line segments for each hourly reading. The x- and y-coordinates for the beginning and end of each line segment must be specified to create stick plots, however, our data only provides the magnitude and direction for each hourly reading. Using some vector algebra, I transfered the wind speed (magnitude) and wind bearing (direction) into "u" and "v" components. The ```aspace``` package includes convenient functions that calculate sine and cosine for degree measurements (see, ```sin_d()``` and ```cos_d()```). For time-1, the x-component of each begins at 1 and ends at 1 plus the "v" component". Since I wanted to center the magnitude on zero, the y-component begins at zero and ends at "u". 
 
-![plot of chunk allAction](/assets/allAction.png) 
+![plot of chunk allAction](/notebook/assets/allAction.png) 
 
 A few things to note... other than the fact the wind will probably be blowing hard from the south and riding in will be slow going. I am not happy with the x-axis. I tried to simply use time as specified from the data pull, but things get complicated adding "v" to ISO specified time. That is, -3.2 + 2003-09-11 08:00:00 isn't really what I'm trying to accomplish. One of the "positives" with ```ggplot2``` is that it only plots data, and even adjusting the x- scale using ```scale_x_continuous()``` is really only supposed to be used for data transformations. In practice, I would probably want to include a plot of temperature or precipitation and would piggy back x-axes. However, since a southern wind is not actually negative it was rather easy to plot only the positive labels with ```scale_y_continuous()```.
 

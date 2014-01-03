@@ -81,7 +81,7 @@ VTmap <- ggmap(map.obj, extent = "panel") +   # Map centered on the Lodge
 print(VTmap)
 ```
 
-![plot of chunk unnamed-chunk-5](/assets/unnamed-chunk-5.png) 
+![plot of chunk unnamed-chunk-5](/notebook/assets/unnamed-chunk-5.png) 
 
 Here is the map zoomed in on Quechee State Park. Both  ```geom_point()``` and ```geom_text()``` kick back errors, because many of the points are plotted outside the range of the zoomed map. Here is a sample of what it will look like before it becomes the inset.
 
@@ -96,7 +96,7 @@ print(overlay)
 
 ```
 
-![plot of chunk unnamed-chunk-6](/assets/unnamed-chunk-6.png) 
+![plot of chunk unnamed-chunk-6](/notebook/assets/unnamed-chunk-6.png) 
 
 #### Map of Vermont with inset of Woodstock area ####
 
@@ -105,7 +105,7 @@ fullMap <- VTmap + inset(grob = ggplotGrob(overlay + theme_inset()), xmin = -74.
     xmax = -73.25, ymin = 42.5, ymax = 43.5)
 print(fullMap)
 ```
-![plot of chunk unnamed-chunk-7](/assets/unnamed-chunk-7.png) 
+![plot of chunk unnamed-chunk-7](/notebook/assets/unnamed-chunk-7.png) 
 
 ### Conclusions ###
 Overall, I'm pretty happy with how the map turned out. I like how easy it was to layer different components with ```ggmap```. I was also plesantly surprised with how simple it was to insert the overlay. The ```geocode()``` and ```mapdist()``` functions worked quite well. Distance could easily have been incorporated by changing the color or size, accordingly: 
@@ -121,7 +121,7 @@ DISTmap2 <- ggmap(map.obj, extent = "panel") +   # Map centered on the Lodge
 print(DISTmap2)
 ```
 
-![plot of chunk unnamed-chunk-8](/assets/unnamed-chunk-81.png) ![plot of chunk unnamed-chunk-8](/assets/unnamed-chunk-82.png) 
+![plot of chunk unnamed-chunk-8](/notebook/assets/unnamed-chunk-81.png) ![plot of chunk unnamed-chunk-8](/notebook/assets/unnamed-chunk-82.png) 
 
 
 However, one thing really frustrated me... when points are close together ```position = 'jitter'``` and 'dodge' can be used to move them to avoid overplotting. Adjusting the position in ```geom_point``` and ```geom_text```, however, don't seem to correspond and many of the points are difficult to distinguish. For the final version, I used photoshop to manually label the markers and to add a list of locations and numbers.
