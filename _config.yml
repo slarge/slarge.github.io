@@ -8,6 +8,7 @@ paginate_path: _site/notebook/page:num
 markdown: redcarpet
 permalink: /notebook/:title
 pygments: true
+safe: true		
 analytics :
   provider : google 
   google : 
