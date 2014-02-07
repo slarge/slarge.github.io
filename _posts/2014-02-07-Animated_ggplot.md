@@ -69,6 +69,8 @@ FUN2 <- function() {
     animation::ani.pause()
   })
 }
+```
+
 ```{r animated ggplot, fig.show='animate', interval=.2, fig.height=5}
 FUN2()
 ```
