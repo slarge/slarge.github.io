@@ -5,8 +5,19 @@ type: post
 ---
 Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time. ```animation ``` is a relatively simple and robust program that basically creates a stop-motion animation from slightly modified images. Here is a .gif of a sample:
 
-<a href="http://htmlpreview.github.com/?https://github.com/slarge/slarge.github.io/blob/master/assets/animated_ggplot_v001.html" a>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="R package animation 2.2">
+  <title>Animations Using the R Language</title>
+  <link rel="stylesheet" href="css/scianimator.css" />
 
+  <script src="js/jquery-1.4.4.min.js"></script>
+  <script src="js/jquery.scianimator.min.js"></script>
+  <script src="js/shCore.js"></script>
+  <script src="js/shAutoloader.js"></script>
+
+</head>
 <body>
 
   <div class="scianimator"><div id="Rplot" style="display: inline-block;"></div></div>
@@ -21,6 +32,9 @@ Working with time series data can be challenging to comprehend. Some colleagues 
 </script>
 
 </body>
+</html>
+
+
 
 Before running the following code, make sure that <a href="http://www.imagemagick.org" target="_blank">ImageMagick</a> is installed on your machine. 
 
