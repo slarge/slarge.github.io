@@ -5,41 +5,11 @@ type: post
 ---
 Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time. ```animation ``` is a relatively simple and robust program that basically creates a stop-motion animation from slightly modified images. Here is a .gif of a sample:
 
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="R package animation 2.2">
-  <title>Animations Using the R Language</title>
-  <link rel="stylesheet" href="css/scianimator.css" />
-
-  <script src="js/jquery-1.4.4.min.js"></script>
-  <script src="js/jquery.scianimator.min.js"></script>
-  <script src="js/shCore.js"></script>
-  <script src="js/shAutoloader.js"></script>
-
-</head>
-<body>
-
-  <div class="scianimator"><div id="Rplot" style="display: inline-block;"></div></div>
-  <script src="js/Rplot.js"></script>
-<!-- highlight R code -->
-<script type="text/javascript">
-  SyntaxHighlighter.autoloader(
-    "r    js/shBrushR.js"
-  );
-  SyntaxHighlighter.defaults["toolbar"] = false;
-  SyntaxHighlighter.all();
-</script>
-
-</body>
-</html>
-
-
 
 Before running the following code, make sure that <a href="http://www.imagemagick.org" target="_blank">ImageMagick</a> is installed on your machine. 
 
 
-{% highlight r %}
+```{r rCode}
 rm(list = ls())
 ###############
 # Script Info #
@@ -99,13 +69,14 @@ FUN2 <- function() {
     animation::ani.pause()
   })
 }
-
+```{r animated ggplot, fig.show='animate', interval=.2, fig.height=5}
 FUN2()
-
+```
+```{r}
 #saveHTML(FUN2(), 
 #         autoplay = FALSE, 
 #         loop = FALSE, 
 #         verbose = FALSE, 
 #         outdir = getwd(),
 #         single.opts = "'controls': ['first', 'previous', 'play', 'next', 'last', 'loop', 'speed'], 'delayMin': 0")
-{% endhighlight %}
+```
