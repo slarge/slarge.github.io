@@ -5,6 +5,8 @@ type: post
 ---
 Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time. ```animation ``` is a relatively simple and robust program that basically creates a stop-motion animation from slightly modified images. Here is a .gif of a sample:
 
+<a href="http://htmlpreview.github.com/?https://github.com/slarge/slarge.github.io/blob/master/assets/animated_ggplot_v001.html" a>
+
 <body>
 
   <div class="scianimator"><div id="Rplot" style="display: inline-block;"></div></div>
