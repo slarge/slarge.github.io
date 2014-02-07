@@ -6,8 +6,6 @@ type: post
 Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time.
 
 
-![animated_ggplot_v001.html](/assets/animated_ggplot_v001.html) 
-
 
 ```{r}
 rm(list = ls())
