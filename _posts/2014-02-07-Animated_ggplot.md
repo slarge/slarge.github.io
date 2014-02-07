@@ -3,11 +3,14 @@ title: Animated ggplot
 layout: post
 type: post
 ---
-Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time.
+Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time. ```animation ``` is a relatively simple and robust program that basically creates a stop-motion animation from slightly modified images. Here is a .gif of a sample:
 
-<iframe width="480" height="360" src="/assets/animated_ggplot_v001.html" frameborder="0"> </iframe>
+<iframe width="400" height="600" src="/assets/animated_ggplot_v001.gif" frameborder="0"> </iframe>
 
-```{r}
+Before running the following code, make sure that <a href="http://www.imagemagick.org" target="_blank">ImageMagick</a> is installed on your machine. 
+
+
+{% highlight r %}
 rm(list = ls())
 ###############
 # Script Info #
@@ -68,10 +71,12 @@ FUN2 <- function() {
   })
 }
 
-saveHTML(FUN2(), 
-         autoplay = FALSE, 
-         loop = FALSE, 
-         verbose = FALSE, 
-         outdir = getwd(),
-         single.opts = "'controls': ['first', 'previous', 'play', 'next', 'last', 'loop', 'speed'], 'delayMin': 0")
-```
+FUN2()
+
+#saveHTML(FUN2(), 
+#         autoplay = FALSE, 
+#         loop = FALSE, 
+#         verbose = FALSE, 
+#         outdir = getwd(),
+#         single.opts = "'controls': ['first', 'previous', 'play', 'next', 'last', 'loop', 'speed'], 'delayMin': 0")
+{% endhighlight %}
