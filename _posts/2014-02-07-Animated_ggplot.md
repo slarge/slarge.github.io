@@ -5,7 +5,7 @@ type: post
 ---
 Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time. ```animation ``` is a relatively simple and robust program that basically creates a stop-motion animation from slightly modified images. Here is a .gif of a sample:
 
-<img src="/assets/2014-02-07-animated_ggplot.gif" style="float:right; width: 200px; height: 200px; border:1px solid black; padding:0px;"/>
+<img src="/assets/2014-02-07-animated_ggplot.gif" style="width: 400px; height: 400px; border:1px solid black; padding:0px;"/>
 
 Before running the following code, make sure that <a href="http://www.imagemagick.org" target="_blank">ImageMagick</a> and <a href="http://www.ffmpeg.org/" target="_blank">FFmpeg</a> are installed on your machine. I used some help from <a href="http://www.renevolution.com/how-to-install-ffmpeg-on-mac-os-x/" target="_blank">Renevolution</a> for a bit of guidance on my mac.
 
