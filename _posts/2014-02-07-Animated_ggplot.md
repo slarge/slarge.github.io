@@ -3,7 +3,7 @@ title: Animated ggplot
 layout: post
 type: post
 ---
-Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time. ```animation ``` is a relatively simple and robust program that basically creates a stop-motion animation from slightly modified images. Here is a .gif of a sample:
+Working with time series data can be challenging to comprehend. Some colleagues are going to be plotting model output across spatial regions. I suggested an animation might be helpful to see potential changes as the model progresses through time. ```animation ``` is a relatively simple and robust package that basically creates a pause between slightly modified images to create a stop-motion animation. Here is a .gif of a sample:
 
 <img src="/assets/2014-02-07-animated_ggplot.gif" style="width: 400px; height: 400px; border:1px solid black; padding:0px;"/>
 
@@ -11,16 +11,23 @@ Before running the following code, make sure that <a href="http://www.imagemagic
 
 
 {% highlight r %}
-############### Script Info #
+##############
+# Script Info #
 ############### 
-############### PURPOSE: Simple animation with ggplot2 AUTHOR: Scott Large
-############### 2014 REVIEWED BY: VERSION: 0.1
+# PURPOSE: Simple animation with ggplot2 
+# AUTHOR: Scott Large 2014 
+# REVIEWED BY: 
+# VERSION: 0.1
+##############
+# PACKAGES #
 ############### 
-############### PACKAGES #
 library(ggplot2)
 library(animation)
 library(gridExtra)
-############### CREATE DATA #
+##############
+# CREATE DATA #
+##############
+
 ts.length <- 50
 ts.dat <- data.frame(x = seq(1, ts.length), y = 1)
 
